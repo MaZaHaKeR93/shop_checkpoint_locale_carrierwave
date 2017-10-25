@@ -1,0 +1,19 @@
+ru:
+  sign_up: "Зарегестрироваться"
+  log_in: "Войти"
+  logged_in_as: "Вы вошли как"
+  navbar_dropdown: "Аккаунт"
+  dropdown_menu_admin-panel: "Админ панель"
+  dropdown_menu_edit_profile: "Редактировать профиль"
+  dropdown_menu_view_orders: "Просмотр заказов"
+  dropdown_menu_sign_out: "Выйти"
+  products:
+    index:
+      list_of_categories: "Категории"
+      greeting_panel_caption: "Добро пожаловать в Shop!"
+      greeting_panel_text: "Здесь вы можете приобрести все виды компьютерного оборудования по самым низким ценам. Мы продаем только доверенные и крупные дистрибьюторы, чтобы выполнить все ваши компьютерные потребности!"
+      greeting_panel_button: "Узнать больше"
+      list_of_cart: "Корзина"
+      cart_is_empty: "Ваша корзина пуста"
+      view_item: "Просмотр"
+      add_item_to_cart: "В корзину"

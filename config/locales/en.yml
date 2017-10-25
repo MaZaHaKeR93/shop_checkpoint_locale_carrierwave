@@ -22,7 +22,22 @@
 en:
   sign_up: "Sign up"
   log_in: "Log in"
-  categories: "Categoriesssss"
-  name: "Name"
+  logged_in_as: "Logged in as"
+  navbar_dropdown: "Account"
+  dropdown_menu_admin-panel: "Admin panel"
+  dropdown_menu_edit_profile: "Edit profile"
+  dropdown_menu_view_orders: "View orders"
+  dropdown_menu_sign_out: "Sign out"
+  products:
+    index:
+      list_of_categories: "Categories"
+      greeting_panel_caption: "Welcome to Shop!"
+      greeting_panel_text: "Here you can purchase all kinds of computer hardware for lowest prices. We sell from only trusted and large distributors,
+  to fulfill all your DIY computer needs!"
+      greeting_panel_button: "Learn more"
+      list_of_cart: "Cart"
+      cart_is_empty: "Your cart is empty"
+      view_item: "View"
+      add_item_to_cart: "Add to cart"
 
 
