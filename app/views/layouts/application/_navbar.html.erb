@@ -20,22 +20,24 @@
              <%= t 'logged_in_as' %> <%= current_user.name %>
           </p>
           <ul class="nav navbar-nav">
+            <li><%= link_to_unless_current "EN", locale: 'en' %></li>
+            <li><%= link_to_unless_current "RU", locale: 'ru' %></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= t 'navbar_dropdown' %> <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <% if current_user.admin? %>
-                  <li><%= link_to 'Admin Panel', admin_root_path %></li>
+                  <li><%= link_to (t 'dropdown_menu_admin_panel'), admin_root_path %></li>
                 <% end %>
-                <li><%= link_to 'Edit profile', edit_user_registration_path(current_user) %></li>
-                <li><a href="#">View orders</a></li>
+                <li><%= link_to (t 'dropdown_menu_edit_profile'), edit_user_registration_path(current_user) %></li>
+                <li><%= link_to (t 'dropdown_menu_view_orders'), '#' %></li>
                 <li class="divider"></li>
-                <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+                <li><%= link_to (t 'dropdown_menu_sign_out'), destroy_user_session_path, method: :delete %></li>
               </ul>
             </li>
           </ul>
         <% else %>
-          <%= link_to 'Sign_up', new_user_registration_path, class: 'btn btn-default navbar-btn' %>
-          <%= link_to 'Log in', new_user_session_path, class: 'btn btn-default navbar-btn' %>
+          <%= link_to (t 'sign_up'), new_user_registration_path, class: 'btn btn-default navbar-btn' %>
+          <%= link_to (t 'log_in'), new_user_session_path, class: 'btn btn-default navbar-btn' %>
         <% end %>
       </ul>
     </div>

@@ -3,8 +3,8 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  before_action :set_locale
   before_action :configure_permitted_parameters, if: :devise_controller?
-
   protected
 
   def configure_permitted_parameters
@@ -17,5 +17,9 @@ class ApplicationController < ActionController::Base
       flash[:danger] = "You don't have enough permissions"
       redirect_to root_url
     end
+  end
+
+  def set_locale
+    I18n.locale = params[:locale] if params[:locale].present?
   end
 end
