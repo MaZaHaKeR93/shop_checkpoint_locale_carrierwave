@@ -38,5 +38,30 @@ ru:
       cart_is_empty: "Ваша корзина пуста"
       view_item: "Просмотр"
       add_item_to_cart: "В корзину"
-
-
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Поле не может быть пустым"
+            email:
+              blank: "Поле не может быть пустым"
+            password:
+              blank: "Поле не может быть пустым"
+              too_short: "Пароль слишком короткий"
+            password_confirmation:
+              confirmation: "Пароли не совпадают"
+            current_password:
+              invalid: "Неверный пароль"
+  activerecord:
+    attributes:
+      user:
+        name: "Имя"
+        current_password: "Текущий пароль"
+        email: Email
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+        remember_me: "Запомнить меня"
+    models:
+      user: "Пользователь"

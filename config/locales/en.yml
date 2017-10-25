@@ -18,7 +18,7 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
+# ru.activerecord.errors.models.user.attributes.name.blank
 en:
   sign_up: "Sign up"
   log_in: "Log in"
@@ -39,5 +39,41 @@ en:
       cart_is_empty: "Your cart is empty"
       view_item: "View"
       add_item_to_cart: "Add to cart"
+  users:
+    name: "Name"
+    email: "Email"
+    password: "Password"
+    password_confirmation: "Password confirmation"
+    current_password: "Current password"
+    update_button: "Update"
+    sign_up: "Sign up"
+    log_in: "Log in"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Field can not be empty"
+            email:
+              blank: "Field can not be empty"
+            password:
+              blank: "Field can not be empty"
+              too_short: "Password is too short"
+            password_confirmation:
+              confirmation: "Passwords do not match"
+            current_password:
+              invalid: "Invalid password"
+  activerecord:
+    attributes:
+      user:
+        name: "Name"
+        current_password: "Current password"
+        email: Email
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        remember_me: "Remember me"
+    models:
+      user: "User"
 
 
