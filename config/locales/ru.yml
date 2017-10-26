@@ -22,6 +22,8 @@
 ru:
   sign_up: "Зарегестрироваться"
   log_in: "Войти"
+  edit_profile: "Редактировать пользователя"
+  user_update_button: "Обновить"
   logged_in_as: "Вы вошли как"
   navbar_dropdown: "Аккаунт"
   dropdown_menu_admin_panel: "Админ панель"

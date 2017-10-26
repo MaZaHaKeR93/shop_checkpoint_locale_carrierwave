@@ -22,8 +22,10 @@
 en:
   sign_up: "Sign up"
   log_in: "Log in"
+  edit_profile: "Edit user"
   logged_in_as: "Logged in as"
   navbar_dropdown: "Account"
+  user_update_button: "Update"
   dropdown_menu_admin_panel: "Admin panel"
   dropdown_menu_edit_profile: "Edit profile"
   dropdown_menu_view_orders: "View orders"
