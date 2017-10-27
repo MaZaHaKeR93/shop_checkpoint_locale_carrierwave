@@ -28,7 +28,7 @@
                 <% if current_user.admin? %>
                   <li><%= link_to (t 'dropdown_menu_admin_panel'), admin_root_path %></li>
                 <% end %>
-                <li><%= link_to (t 'dropdown_menu_edit_profile'), edit_user_registration_path(current_user) %></li>
+                <li><%= link_to (t 'dropdown_menu_edit_profile'), edit_user_registration_path(current_user, locale: I18n.locale) %></li>
                 <li><%= link_to (t 'dropdown_menu_view_orders'), '#' %></li>
                 <li class="divider"></li>
                 <li><%= link_to (t 'dropdown_menu_sign_out'), destroy_user_session_path, method: :delete %></li>

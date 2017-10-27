@@ -34,7 +34,7 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <h3><%= product.send("title_" + "#{I18n.locale}") %></h3>
-              <div class="img" style="background-image: url('<%= image_path product_image(product.id) %>');"></div>
+              <div class="img" style="background-image: url('<%= product.image.url(:medium) %>');"></div>
               <h4>$<%= product.price %></h4>
               <p>
                 <%= link_to (t '.view_item'), product_path(product), class: "btn btn-success" %></button>

@@ -30,6 +30,9 @@ ru:
   dropdown_menu_edit_profile: "Редактировать профиль"
   dropdown_menu_view_orders: "Просмотр заказов"
   dropdown_menu_sign_out: "Выйти"
+  will_paginate:
+    previous_label: "&#8592; Предыдущая"
+    next_label: "Следующая &#8594;"
   products:
     index:
       list_of_categories: "Категории"
