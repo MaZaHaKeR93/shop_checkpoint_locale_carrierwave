@@ -7,7 +7,7 @@ class Admin::ProductsController < AdminController
     @product = Product.new(product_params)
 
     if @product.save
-      save_picture
+      # save_picture
       redirect_to [:admin, @product]
     else
       render 'new'
@@ -22,7 +22,7 @@ class Admin::ProductsController < AdminController
     @product = Product.find(params[:id])
 
     if @product.update(product_params)
-      save_picture
+      # save_picture
       redirect_to [:admin, @product]
     else
       render 'edit'
@@ -48,15 +48,15 @@ class Admin::ProductsController < AdminController
     params.require(:product).permit(:title_en, :title_ru, :description_en, :description_ru, :price, :category_id)
   end
 
-  def save_picture
-    uploaded_file = params[:product][:picture]
+  # def save_picture
+  #   uploaded_file = params[:product][:picture]
 
-    unless uploaded_file.nil?
-      new_file_path = Rails.root.join('public', 'uploads', @product.id.to_s)
+  #   unless uploaded_file.nil?
+  #     new_file_path = Rails.root.join('public', 'uploads', @product.id.to_s)
 
-      File.open(new_file_path, 'wb') do |file|
-        file.write uploaded_file.read
-      end
-    end
-  end
+  #     File.open(new_file_path, 'wb') do |file|
+  #       file.write uploaded_file.read
+  #     end
+  #   end
+  # end
 end
