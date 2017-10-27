@@ -1,5 +1,5 @@
 <h1><%= @product.send("title_" + "#{I18n.locale}") %></h1>
-<%= image_tag("/uploads/#{@product.id}", size: '300') %>
+<%= image_tag(@product.image.url(:medium)) %>
 <p><%= @product.send("description_" + "#{I18n.locale}") %></p>
 <p>
     <%= t '.price_for_product' %> <b><%= @product.price %></b>
