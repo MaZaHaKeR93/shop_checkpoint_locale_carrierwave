@@ -73,6 +73,7 @@ en:
               confirmation: "Passwords do not match"
             current_password:
               invalid: "Invalid password"
+              blank: "Field can not be empty"
   activerecord:
     attributes:
       user:

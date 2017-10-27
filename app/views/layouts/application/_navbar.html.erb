@@ -19,7 +19,7 @@
       <ul class="navbar-nav navbar-right">
         <% if user_signed_in? %>
           <p class="navbar-text">
-             <%= t 'logged_in_as' %> <%= current_user.name %>
+             <%= t 'logged_in_as' %> <%= current_user.name %> <%= image_tag(current_user.avatar.url(:thumb)) %>
           </p>
           <ul class="nav navbar-nav">
             <li class="dropdown">

@@ -53,17 +53,17 @@ ru:
         user:
           attributes:
             name:
-              blank: "Поле не может быть пустым"
+              blank: "не может быть пустым"
             email:
-              blank: "Поле не может быть пустым"
+              blank: "не может быть пустым"
             password:
-              blank: "Поле не может быть пустым"
+              blank: "не может быть пустым"
               too_short: "Пароль слишком короткий"
             password_confirmation:
               confirmation: "Пароли не совпадают"
             current_password:
               invalid: "Неверный пароль"
-  activerecord:
+              blank: "не может быть пустым"
     attributes:
       user:
         name: "Имя"
