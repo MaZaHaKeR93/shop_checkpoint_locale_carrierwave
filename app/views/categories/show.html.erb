@@ -1,0 +1,11 @@
+<h1><%= t '.all_products_in_category' %> "<%= @category.send("name_" + "#{I18n.locale}") %>"</h1><br>
+<div class="row">
+	<% @category.products.each do |product| %>
+		<div class="col-md-4" align="center">
+			<h3><%= product.send("title_" + "#{I18n.locale}") %></h3>
+			<%= image_tag("/uploads/#{product.id}", size: '300') %>
+			<p> <%= product.send("description_" + "#{I18n.locale}") %></p>
+			<p><%= product.price %></p>
+		</div>
+	<% end %>
+</div>

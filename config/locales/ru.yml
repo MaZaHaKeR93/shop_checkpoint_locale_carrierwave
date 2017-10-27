@@ -40,6 +40,13 @@ ru:
       cart_is_empty: "Ваша корзина пуста"
       view_item: "Просмотр"
       add_item_to_cart: "В корзину"
+    show:
+      category: "Категория"
+      back_to_list_link: "Вернуться к списку"
+      price_for_product: "Стоимость:"
+  categories:
+    show:
+      all_products_in_category: "Все продукты в категории"
   activerecord:
     errors:
       models:

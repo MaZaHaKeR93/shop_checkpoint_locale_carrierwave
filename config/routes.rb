@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do 
 	  root 'products#index'
+    resources :products, only: [:show]
+    resources :categories, only: [:show]
   end
   namespace :admin do
     root 'products#index'

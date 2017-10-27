@@ -14,7 +14,7 @@
       <div class="panel-body">
         <ul>
         <% Category.all.each do |category| %>
-            <li><a href="#"><%= category.send("name_" + "#{I18n.locale}") %></a></li>
+            <li><%= link_to category.send("name_" + "#{I18n.locale}"), category_path(category.id) %></li>
         <% end %>
         </ul>
       </div>
@@ -37,7 +37,7 @@
               <div class="img" style="background-image: url('<%= image_path product_image(product.id) %>');"></div>
               <h4>$<%= product.price %></h4>
               <p>
-                <button class="btn btn-default"><%= t '.view_item' %></button>
+                <%= link_to (t '.view_item'), product_path(product), class: "btn btn-success" %></button>
                 <button class="btn btn-primary"><%= t '.add_item_to_cart' %></button>
               </p>
             </div>

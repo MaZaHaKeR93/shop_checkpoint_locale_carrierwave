@@ -1,0 +1,12 @@
+<h1><%= @product.send("title_" + "#{I18n.locale}") %></h1>
+<%= image_tag("/uploads/#{@product.id}", size: '300') %>
+<p><%= @product.send("description_" + "#{I18n.locale}") %></p>
+<p>
+    <%= t '.price_for_product' %> <b><%= @product.price %></b>
+</p>
+<p>
+    <b><%= t ".category" %>: </b> <%= @product.category.send("name_" + "#{I18n.locale}") %>
+</p>
+<div>
+    <%= link_to (t '.back_to_list_link'), root_path %>
+</div>

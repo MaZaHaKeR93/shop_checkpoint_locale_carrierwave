@@ -41,6 +41,13 @@ en:
       cart_is_empty: "Your cart is empty"
       view_item: "View"
       add_item_to_cart: "Add to cart"
+    show:
+      category: "Category"
+      back_to_list_link: "Back to list"
+      price_for_product: "Price:"
+  categories:
+    show:
+      all_products_in_category: "All products in category"
   users:
     name: "Name"
     email: "Email"
